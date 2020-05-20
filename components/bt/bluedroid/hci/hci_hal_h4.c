@@ -309,8 +309,8 @@ static void hci_hal_h4_hdl_rx_packet(BT_HDR *packet)
     }
 
     if ((length + hdr_size) != packet->len) {
-        HCI_TRACE_ERROR("Wrong packet length type=%d hdr_len=%d pd_len=%d "
-                  "pkt_len=%d", type, hdr_size, length, packet->len);
+        //HCI_TRACE_ERROR("Wrong packet length type=%d hdr_len=%d pd_len=%d "
+        //          "pkt_len=%d", type, hdr_size, length, packet->len);
         osi_free(packet);
         return;
     }
